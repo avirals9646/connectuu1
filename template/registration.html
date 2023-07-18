@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login and Signup Pages</title>
+  <!-- Bootstrap CSS link -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card">
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#login">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#signup">Signup</a>
+            </li>
+          </ul>
+          <div class="tab-content">
+            <!-- Login Tab -->
+            <div class="tab-pane fade show active" id="login">
+              <div class="card-header">
+                <h3 class="text-center">Login</h3>
+              </div>
+              <div class="card-body">
+                <form>
+                  <div class="form-group">
+                    <label for="login-username">Username</label>
+                    <input type="text" class="form-control" id="login-username" placeholder="Enter your username" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" class="form-control" id="login-password" placeholder="Enter your password" required>
+                  </div>
+                  <button type="submit" class="btn btn-primary btn-block">Login</button>
+                </form>
+              </div>
+            </div>
+
+            <!-- Signup Tab -->
+            <div class="tab-pane fade" id="signup">
+              <div class="card-header">
+                <h3 class="text-center">Signup</h3>
+              </div>
+              <div class="card-body">
+                <form>
+                  <div class="form-group">
+                    <label for="signup-username">Username</label>
+                    <input type="text" class="form-control" id="signup-username" placeholder="Enter your username" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="signup-email">Email</label>
+                    <input type="email" class="form-control" id="signup-email" placeholder="Enter your email" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="signup-password">Password</label>
+                    <input type="password" class="form-control" id="signup-password" placeholder="Enter your password" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" class="form-control" id="confirm-password" placeholder="Confirm your password" required>
+                  </div>
+                  <button type="submit" class="btn btn-primary btn-block">Signup</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Bootstrap JS and jQuery links (make sure to include them at the end of the body) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
