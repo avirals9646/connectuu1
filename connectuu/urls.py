@@ -20,4 +20,12 @@ from allumni import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.index),
+    path('about/',views.about),
+    path('team/',views.team),
+    path('contact/',views.contact),
+    path('project/',views.project),
+    path('registration/',views.registration),
+    path('service/',views.service),
+    path('testimonial/',views.testimonial),
+    
 ]
