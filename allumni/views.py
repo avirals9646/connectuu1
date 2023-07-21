@@ -1,4 +1,5 @@
 from django.shortcuts import render,HttpResponse,redirect
+from .models import Alumni
 
 # Create your views here.
 def index(request):
@@ -20,3 +21,6 @@ def team(request):
 def testimonial(request):
     return render(request,'testimonial.html')
 
+def alumni_list(request):
+    alumni_data = Alumni.objects.all()
+    return render(request, 'alumni_list.html', {'alumni_data': alumni_data})

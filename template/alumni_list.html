@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Alumni List</title>
+</head>
+<body>
+    <h1>Alumni List</h1>
+    <table>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Graduation Year</th>
+            <!-- Add more table headers for other fields -->
+        </tr>
+        {% for alumni in alumni_data %}
+        <tr>
+            <td>{{ alumni.first_name }}</td>
+            <td>{{ alumni.last_name }}</td>
+            <td>{{ alumni.graduation_year }}</td>
+            <!-- Add more table cells for other fields -->
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
